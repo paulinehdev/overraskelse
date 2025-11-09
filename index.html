@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Farsdag - Overraskelse</title>
+</head>
+<body>
+    <header>
+    <h1>Pappas Garasje</h1>
+    <p>En liten hyllest til klassikerne – og til deg, pappa!</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>Trykk på startknappen for å starte motoren og åpne garasjen!</p>
+      <button id="startBtn">Start bilen</button>
+      <div class="message" id="message">Vrooom! Motorene er i gang, og garasjen våkner til liv!
+        Her står bilene som har fulgt deg gjennom både hverdag og eventyr. 
+        Takk for alle turene, latteren og de små øyeblikkene som gjør livet så rikt. God farsdag!</div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <article class="car">
+        <img src="bilder/mitsubishi.jpg" alt="Mitsubishi Galant 2003">
+        <h2>Mitsubishi Galant 2003</h2>
+        <p>En moderne klassiker med japansk presisjon.  
+        Komfort, kraft og pålitelighet i ett – den trofaste følgesvennen på mange turer.</p>
+      </article>
+
+      <article class="car">
+        <img src="bilder/wartburg1990.jpg" alt="Wartburg 1990">
+        <h2>Wartburg 1990</h2>
+        <p>
+            Den sjarmerende klassikeren fra Øst-Tyskland – med sin karakteristiske lukt og lyd, 
+            vekker minner fra en tid da bilkjøring krevde både tålmodighet og verktøykasse i bagasjen!
+        </p>
+      </article>
+
+      <article class="car">
+        <img src="bilder/ifap70.jpg" alt="IFA P70">
+        <h2>IFA P70</h2>
+        <p>Verdensmesteren i koselig fart – alltid tid til å nyte utsikten underveis. 
+            En liten helt på fire hjul som minner oss på at reisen ofte er morsommere enn målet!</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Laget med kjærlighet | Farsdag 2025</p>
+  </footer>
+
+  <script>
+    const button = document.getElementById("startBtn");
+    const message = document.getElementById("message");
+
+    button.addEventListener("click", () => {
+      message.style.display = "block";
+      button.disabled = true;
+    });
+  </script>
+    
+</body>
+</html>
